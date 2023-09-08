@@ -9,17 +9,38 @@
 
 
 
-.header .header_bar {
+
+
+.header .header_top {
     position: fixed;
     top: 50px;
-    right: 50px;
+    left: 50px;
+    z-index: 1000;
+}
+
+.header .header_top h1 {
+    position: absolute;
+    top: 3px;
+    left: -110px;
+    font-size: 16px;
+    background: var(--dmc);
+    padding: 8px 70px;
+    transform: rotate(-43deg);
+    white-space: nowrap;
+    /* -> 줄바꿈 안되게 */
+}
+
+.header .header_bar {
+    position: fixed;
+    top: 40px;
+    right: 40px;
     z-index: 1000;
 }
 
 .header .header_bar a {
     display: block;
-    font-size: 30px;
-    background: #ffdede;
+    font-size: 28px;
+    background: var(--dmc);
     border-radius: 50%;
     pointer-events: none;
 }
@@ -38,7 +59,7 @@
     top: -200%;
     right: 0;
     z-index: 999;
-    background: #ffdede;
+    background: var(--mc);
     width: 100%;
     height: 100%;
     line-height: 60px;
@@ -95,8 +116,146 @@
 .header .header_gnb>ul>li .sub a span {
     font-size: 25px;
     font-weight: 700;
-    color: #720909;
+    color: var(--dr);
 }
+
+
+
+
+
+
+
+/* 👻도트👻 */
+/* <<<<<< 시작 도트 공통 디자인  */
+.dots_list {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 1000;
+}
+
+.dots_list .dots {
+    display: flex;
+}
+
+.dots_list .dots li {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+/* .dots_list .swiper-wrapper {
+    transition-timing-function: cubic-bezier(0, 0.75, 0.01, -0.13);
+} */
+
+.dots_list .dots li:hover a::before {
+    width: 25px;
+    height: 25px;
+}
+
+.dots_list .dots li.on a::before {
+    width: 25px;
+    height: 25px;
+}
+
+/* .dots_list .dots li span {
+    font-size: 0;
+} */
+
+/* < 도트 공통 디자인 끝 >>>>>>>> */
+
+
+/* 웹 도트 */
+.dots_list .web_dots li a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 15px;
+    width: 15px;
+    background: #bbb;
+    border-radius: 50%;
+}
+
+.dots_list .web_dots li.on a::after {
+    background: var(--dmc);
+}
+
+.dots_list .web_dots li a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid var(--dmc);
+    border-radius: 50%;
+    transition: 0.5s linear;
+}
+
+.dots_list .web_dots li a span {
+    position: absolute;
+    bottom: -60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    white-space: nowrap;
+    color: var(--dmc);
+    opacity: 0;
+}
+
+.dots_list .web_dots li.on a span {
+    opacity: 1;
+}
+
+
+/* 비주얼 도트 */
+.dots_list .visual_dots li a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 15px;
+    width: 15px;
+    background: #555;
+    border-radius: 50%;
+}
+
+.dots_list .visual_dots li.on a::after {
+    background: var(--dr);
+}
+
+.dots_list .visual_dots li a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid var(--dr);
+    border-radius: 50%;
+    transition: 0.5s linear;
+}
+
+.dots_list .visual_dots li a span {
+    position: absolute;
+    bottom: -60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    white-space: nowrap;
+    color: var(--dr);
+    opacity: 0;
+}
+
+.dots_list .visual_dots li.on a span {
+    opacity: 1;
+}
+
+
 
 
 
@@ -107,7 +266,7 @@
 
 .main {
     position: relative;
-    background: #ffdede;
+    background: var(--mc);
 }
 
 .main::before {
@@ -148,7 +307,7 @@
     margin: 0 0 10px 0;
 }
 
-.main .main_tit h1 {
+.main .main_tit h2 {
     font-size: 130px;
     line-height: 140px;
     font-family: 'Abril Fatface', cursive;
@@ -714,6 +873,9 @@
 
 
 
+/* .vi_sub05_1 {
+    background: url(../images/생활맥주_목업1.jpg) no-repeat center center/cover;
+} */
 .vi_sub05_1 {
     background: url(../images/생활맥주_목업1.jpg) no-repeat center center/cover;
 }
@@ -750,60 +912,85 @@
 
 
 
-.footer {
-    background: #ffdede;
+.profile {
+    background: var(--mc);
 }
 
-.footer .footer_box {
+.profile h2 {
+    position: absolute;
+    top: 100px;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--dr);
+}
+
+.profile .profile_box {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-/* .footer .footer_box>* {
-    flex: 1;
-} */
-
-.footer .footer_img img {
-    height: 500px;
+.profile .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.footer .footer_box h3 {
+.profile .about .profile_img {
+    margin: 0 0 50px 0;
+}
+
+.profile .about .profile_img img {
+    height: 200px;
+    border: 10px solid #ffbcbc;
+}
+
+.profile .about .main_txt>li {
+    font-size: 16px;
+    margin: 0 0 12px 0;
+}
+
+.profile .about .main_txt>li i {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.profile .profile_box h3 {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0 0 20px 0;
+    color: var(--dr);
 }
 
-.footer .case:nth-child(1) {
+.profile .case:nth-child(1) {
     display: flex;
     flex-direction: column;
     height: 350px;
 }
 
-.footer .case:nth-child(3) {
+.profile .case:nth-child(3) {
     display: flex;
     flex-direction: column;
     height: 350px;
 }
 
-.footer .case>ul>li {
+.profile .case>ul>li {
     font-size: 16px;
     font-weight: 400;
 }
 
-.footer .case>ul>li span {
+.profile .case>ul>li span {
     display: block;
 }
 
-.footer .case>ul>li span:nth-child(1) {
-    color: #720909;
+.profile .case>ul>li span:nth-child(1) {
     font-weight: 500;
     margin: 0 0 5px 0;
 }
 
-.footer .case>ul>li span:nth-child(2) {
+.profile .case>ul>li span:nth-child(2) {
     margin: 0 0 12px 0;
 }
 
-.footer .left_txt>ul>li:nth-child(1) {
+.profile .left_txt>ul>li:nth-child(1) {
     margin: 0 0 20px 0;
 }
