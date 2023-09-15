@@ -1034,6 +1034,31 @@
     font-size: 0;
 }
 
+/* 비주얼디자인 화살표 수정 */
+.fp-controlArrow.fp-prev {
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+
+.fp-controlArrow.fp-prev::before {
+    content: "\e93d";
+    font-family: xeicon;
+    font-size: 60px;
+}
+
+.fp-controlArrow.fp-next {
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+
+.fp-controlArrow.fp-next::before {
+    content: "\e940";
+    font-family: xeicon;
+    font-size: 60px;
+}
+
 /* < section 공통 디자인 끝 >>>>> */
 
 
@@ -1187,58 +1212,37 @@
 }
 
 @media (max-width:768px) {
-    .vi_sub_wrap {
-        transform: translate(0, 100px);
-        opacity: 0;
-    }
-
-    .section.on .vi_sub_wrap {
-        transform: translate(0, 0);
-        opacity: 1;
-        transition: 0.5s;
-    }
+    .vi_sub_wrap {}
 
     .vi_sub_wrap strong {
-        display: block;
-        font-size: 17px;
-        font-weight: 500;
-        margin: 0 0 10px 0;
+        font-size: 16px;
+        margin: 0 10px 5px 10px;
     }
 
     .vi_sub_wrap h2 {
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 700;
-        margin: 0 0 130px 0;
+        margin: 0 10px 40px 10px;
     }
 
     .vi_sub_wrap .sub_tit {
-        display: flex;
-        gap: 30px;
-        margin: 0 0 10px 0;
+        margin: 0 10px 50px 10px;
     }
 
     .vi_sub_wrap .sub_tit>ul>li {
-        height: 40px;
+        height: 35px;
     }
 
     .vi_sub_wrap .list_tit {
-        font-size: 18px;
-        font-weight: 400;
+        font-size: 17px;
     }
 
     .vi_sub_wrap .list_txt {
-        font-size: 17px;
-        color: #666;
+        font-size: 16px;
     }
 
     .vi_sub_wrap .list_txt .color {
-        font-size: 0;
-        line-height: 40px;
-    }
-
-    .vi_sub_wrap .list_txt .color ol {
-        display: flex;
-        gap: 10px;
+        line-height: 35px;
     }
 
     .vi_sub_wrap .list_txt .color li {
@@ -1249,12 +1253,44 @@
     }
 
     .vi_sub_wrap .origin_img img {
-        height: 120px;
+        height: 210px;
         border: 1px solid #fff;
+        margin: 0;
+        object-fit: cover;
     }
 
     .vi_sub_wrap .block {
         font-size: 0;
+    }
+
+    /* 비주얼디자인 화살표 수정 */
+    .fp-controlArrow {}
+
+    .fp-controlArrow.fp-prev {
+
+        transform: translate(10px, -25px);
+        left: auto;
+        right: 15px;
+    }
+
+    .fp-controlArrow.fp-prev::before {
+        font-size: 30px;
+        color: #fff;
+        background: #444;
+        padding: 7px;
+        border-radius: 50%;
+    }
+
+    .fp-controlArrow.fp-next {
+        transform: translate(10px, 25px);
+    }
+
+    .fp-controlArrow.fp-next::before {
+        font-size: 30px;
+        color: #fff;
+        background: #444;
+        padding: 7px;
+        border-radius: 50%;
     }
 
     /* < section 공통 디자인 끝 >>>>> */
@@ -1263,30 +1299,14 @@
 
 
     .vi_sub01_1 {
-        background: url(../images/SNS중독\ 포스터_목업1.jpg)no-repeat center center/cover;
-    }
-
-    .vi_sub01_1 strong {
-        color: #ED1C24;
-    }
-
-    .vi_sub01_1 .list_txt .color li:nth-child(1) {
-        background: #ED1C24;
-    }
-
-    .vi_sub01_1 .list_txt .color li:nth-child(2) {
-        background: linear-gradient(to right bottom, #384EA1 11%, #5A5BA8 22%, #7C489C 33%, #C23785 44%, #E1326D 55%, #EB484D 66%, #F4773A 77%, #FBAF46 88%, #E1DD80 100%);
-    }
-
-    .vi_sub01_1 .list_txt .color li:nth-child(3) {
-        background: #314A7E;
-    }
-
-    .vi_sub01_1 .list_txt .color li:nth-child(4) {
-        background: #0787BB;
+        background: #f5f2f2;
     }
 
     .vi_sub01_2 {
+        background: url(../images/SNS중독\ 포스터_목업1.jpg)no-repeat 79% center/cover;
+    }
+
+    .vi_sub01_3 {
         background: url(../images/SNS중독\ 포스터_목업2.jpg)no-repeat center center/cover;
     }
 
@@ -1294,30 +1314,14 @@
 
 
     .vi_sub02_1 {
-        background: url(../images/아디다스\ 신발\ 포스터_목업1.jpg)no-repeat center center/cover;
-    }
-
-    .vi_sub02_1 strong {
-        color: #116933;
-    }
-
-    .vi_sub02_1 .list_txt .color li:nth-child(1) {
-        background: #116933;
-    }
-
-    .vi_sub02_1 .list_txt .color li:nth-child(2) {
-        background: #ffb216;
-    }
-
-    .vi_sub02_1 .list_txt .color li:nth-child(3) {
-        background: #0e87c2;
-    }
-
-    .vi_sub02_1 .list_txt .color li:nth-child(4) {
-        background: #f00c00;
+        background: #f6f8f5;
     }
 
     .vi_sub02_2 {
+        background: url(../images/아디다스\ 신발\ 포스터_목업1.jpg)no-repeat 75% center/cover;
+    }
+
+    .vi_sub02_3 {
         background: url(../images/아디다스\ 신발\ 포스터_목업2.jpg)no-repeat center center/cover;
     }
 
@@ -1325,57 +1329,29 @@
 
 
     .vi_sub03_1 {
-        background: url(../images/해운대모래축제_목업1.jpg)no-repeat center center/cover;
-    }
-
-    .vi_sub03_1 strong {
-        color: #D09C4F;
-    }
-
-    .vi_sub03_1 .list_txt .color li:nth-child(1) {
-        background: #D09C4F;
-    }
-
-    .vi_sub03_1 .list_txt .color li:nth-child(2) {
-        background: #754C29;
-    }
-
-    .vi_sub03_1 .list_txt .color li:nth-child(3) {
-        background: #2A5B35;
+        background: #fffef8;
     }
 
     .vi_sub03_2 {
-        background: url(../images/해운대모래축제_목업2.jpg)no-repeat center center/cover;
+        background: url(../images/해운대모래축제_목업1.jpg)no-repeat 77% center/cover;
+    }
+
+    .vi_sub03_3 {
+        background: url(../images/해운대모래축제_목업2.jpg)no-repeat 25% center/cover;
     }
 
 
 
 
     .vi_sub04_1 {
-        background: url(../images/책\ 컬러리스트_목업1.png)no-repeat center center/cover;
-    }
-
-    .vi_sub04_1 strong {
-        color: #742B85;
-    }
-
-    .vi_sub04_1 .list_txt .color li:nth-child(1) {
-        background: #742B85;
-    }
-
-    .vi_sub04_1 .list_txt .color li:nth-child(2) {
-        background: #0B1252;
-    }
-
-    .vi_sub04_1 .list_txt .color li:nth-child(3) {
-        background: #EC008C;
-    }
-
-    .vi_sub04_1 .list_txt .color li:nth-child(4) {
-        background: #FFF200;
+        background: #fefbff;
     }
 
     .vi_sub04_2 {
+        background: url(../images/책\ 컬러리스트_목업1.png)no-repeat 70% center/cover;
+    }
+
+    .vi_sub04_3 {
         background: url(../images/책\ 컬러리스트_목업2.jpg)no-repeat center center/cover;
     }
 
@@ -1384,19 +1360,7 @@
 
 
     .vi_sub05_1 {
-        background: url(../images/생활맥주_목업1.jpg) no-repeat center center/cover;
-    }
-
-    .vi_sub05_1 strong {
-        color: #F5C700;
-    }
-
-    .vi_sub05_1 .list_txt .color li:nth-child(1) {
-        background: #F5C700;
-    }
-
-    .vi_sub05_1 .list_txt .color li:nth-child(2) {
-        background: #1D1D1B;
+        background: #fffffb;
     }
 
     .vi_sub05_1 .origin_img img {
@@ -1406,60 +1370,19 @@
     }
 
     .vi_sub05_2 {
+        background: url(../images/생활맥주_목업1.jpg)no-repeat 87% center/cover;
+    }
+
+    .vi_sub05_3 {
         background: url(../images/생활맥주_목업2.jpg)no-repeat center center/cover;
     }
 }
 
+
+
+
 /* 🤩비주얼디자인 끝🤩 */
 
-
-
-
-
-/* .fp-controlArrow {
-    display: none;
-}
-
-.visual_arrow {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1800px;
-
-    font-size: 60px;
-    color: #666666;
-
-    cursor: pointer;
-    z-index: 999;
-} */
-
-.fp-controlArrow.fp-prev {
-    border: none;
-    width: 60px;
-    height: 60px;
-}
-
-.fp-controlArrow.fp-prev::before {
-    content: "\e93d";
-    font-family: xeicon;
-    font-size: 60px;
-}
-
-.fp-controlArrow.fp-next {
-    border: none;
-    width: 60px;
-    height: 60px;
-}
-
-.fp-controlArrow.fp-next::before {
-    content: "\e940";
-    font-family: xeicon;
-    font-size: 60px;
-}
 
 
 
