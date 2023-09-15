@@ -126,10 +126,14 @@
         top: -20px;
         left: -70px;
         background: var(--dmc);
-        padding: 10px 40px;
+        padding: 8px 40px;
         transform: rotate(0);
         clip-path: polygon(100% 0, 90% 50%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
     }
+
+
+
+
 
     .header .header_bar {
         position: fixed;
@@ -138,12 +142,19 @@
         z-index: 1000;
     }
 
+    .header .header_bar a {
+        font-size: 22px;
+    }
+
+    .header .header_bar i {
+        padding: 10px;
+    }
+
 
 
 
     .header .header_gnb {
-        display: block;
-        padding: 0 0 0 40px;
+        padding: 80px 0 0 40px;
     }
 
     .header .header_gnb>ul {
@@ -390,9 +401,14 @@
         display: none;
     }
 
+    .main .main_wrap {
+        flex-direction: column;
+        gap: 23vh;
+    }
+
     .main .main_tit {
-        position: absolute;
-        top: 230px;
+        transform: translate(0, 0);
+        position: static;
     }
 
     .main .main_tit strong {
@@ -405,9 +421,8 @@
     }
 
     .main .main_txt {
-        position: absolute;
-        bottom: 170px;
-        left: 20px;
+        transform: translate(0, 0);
+        align-self: flex-start;
     }
 }
 
@@ -732,6 +747,7 @@
 
     .sub_img {
         margin: 60px 0 100px 0;
+        height: 40%;
     }
 
     .sub_img .pc_img {
@@ -742,6 +758,10 @@
         border-radius: 7px;
         box-shadow: none;
     }
+
+    /* .sub_img .pc_img:hover img {
+        transform: none;
+    } */
 
     .sub_img .m_img {
         position: absolute;
@@ -754,6 +774,10 @@
         box-shadow: none;
     }
 
+    /* .sub_img .m_img:hover img {
+        transform: none;
+    } */
+
     .w_sub_wrap .sub_txt figure {
         margin: 0 0 10px 0;
     }
@@ -764,6 +788,7 @@
 
     .w_sub_wrap .sub_txt {
         padding: 10px;
+        min-height: 320px;
     }
 
     .w_sub_wrap .sub_txt h2 {
@@ -795,7 +820,7 @@
 
     .w_sub_wrap .click {
         position: absolute;
-        top: -18%;
+        top: -40px;
         left: 50%;
         transform: translate(-50%, 0);
     }
@@ -1134,9 +1159,7 @@
 
 
 
-/* .vi_sub05_1 {
-    background: url(../images/생활맥주_목업1.jpg) no-repeat center center/cover;
-} */
+
 .vi_sub05_1 {
     background: url(../images/생활맥주_목업1.jpg) no-repeat center center/cover;
 }
@@ -1163,8 +1186,280 @@
     background: url(../images/생활맥주_목업2.jpg)no-repeat center center/cover;
 }
 
+@media (max-width:768px) {
+    .vi_sub_wrap {
+        transform: translate(0, 100px);
+        opacity: 0;
+    }
+
+    .section.on .vi_sub_wrap {
+        transform: translate(0, 0);
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    .vi_sub_wrap strong {
+        display: block;
+        font-size: 17px;
+        font-weight: 500;
+        margin: 0 0 10px 0;
+    }
+
+    .vi_sub_wrap h2 {
+        font-size: 30px;
+        font-weight: 700;
+        margin: 0 0 130px 0;
+    }
+
+    .vi_sub_wrap .sub_tit {
+        display: flex;
+        gap: 30px;
+        margin: 0 0 10px 0;
+    }
+
+    .vi_sub_wrap .sub_tit>ul>li {
+        height: 40px;
+    }
+
+    .vi_sub_wrap .list_tit {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .vi_sub_wrap .list_txt {
+        font-size: 17px;
+        color: #666;
+    }
+
+    .vi_sub_wrap .list_txt .color {
+        font-size: 0;
+        line-height: 40px;
+    }
+
+    .vi_sub_wrap .list_txt .color ol {
+        display: flex;
+        gap: 10px;
+    }
+
+    .vi_sub_wrap .list_txt .color li {
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        vertical-align: middle;
+    }
+
+    .vi_sub_wrap .origin_img img {
+        height: 120px;
+        border: 1px solid #fff;
+    }
+
+    .vi_sub_wrap .block {
+        font-size: 0;
+    }
+
+    /* < section 공통 디자인 끝 >>>>> */
+
+
+
+
+    .vi_sub01_1 {
+        background: url(../images/SNS중독\ 포스터_목업1.jpg)no-repeat center center/cover;
+    }
+
+    .vi_sub01_1 strong {
+        color: #ED1C24;
+    }
+
+    .vi_sub01_1 .list_txt .color li:nth-child(1) {
+        background: #ED1C24;
+    }
+
+    .vi_sub01_1 .list_txt .color li:nth-child(2) {
+        background: linear-gradient(to right bottom, #384EA1 11%, #5A5BA8 22%, #7C489C 33%, #C23785 44%, #E1326D 55%, #EB484D 66%, #F4773A 77%, #FBAF46 88%, #E1DD80 100%);
+    }
+
+    .vi_sub01_1 .list_txt .color li:nth-child(3) {
+        background: #314A7E;
+    }
+
+    .vi_sub01_1 .list_txt .color li:nth-child(4) {
+        background: #0787BB;
+    }
+
+    .vi_sub01_2 {
+        background: url(../images/SNS중독\ 포스터_목업2.jpg)no-repeat center center/cover;
+    }
+
+
+
+
+    .vi_sub02_1 {
+        background: url(../images/아디다스\ 신발\ 포스터_목업1.jpg)no-repeat center center/cover;
+    }
+
+    .vi_sub02_1 strong {
+        color: #116933;
+    }
+
+    .vi_sub02_1 .list_txt .color li:nth-child(1) {
+        background: #116933;
+    }
+
+    .vi_sub02_1 .list_txt .color li:nth-child(2) {
+        background: #ffb216;
+    }
+
+    .vi_sub02_1 .list_txt .color li:nth-child(3) {
+        background: #0e87c2;
+    }
+
+    .vi_sub02_1 .list_txt .color li:nth-child(4) {
+        background: #f00c00;
+    }
+
+    .vi_sub02_2 {
+        background: url(../images/아디다스\ 신발\ 포스터_목업2.jpg)no-repeat center center/cover;
+    }
+
+
+
+
+    .vi_sub03_1 {
+        background: url(../images/해운대모래축제_목업1.jpg)no-repeat center center/cover;
+    }
+
+    .vi_sub03_1 strong {
+        color: #D09C4F;
+    }
+
+    .vi_sub03_1 .list_txt .color li:nth-child(1) {
+        background: #D09C4F;
+    }
+
+    .vi_sub03_1 .list_txt .color li:nth-child(2) {
+        background: #754C29;
+    }
+
+    .vi_sub03_1 .list_txt .color li:nth-child(3) {
+        background: #2A5B35;
+    }
+
+    .vi_sub03_2 {
+        background: url(../images/해운대모래축제_목업2.jpg)no-repeat center center/cover;
+    }
+
+
+
+
+    .vi_sub04_1 {
+        background: url(../images/책\ 컬러리스트_목업1.png)no-repeat center center/cover;
+    }
+
+    .vi_sub04_1 strong {
+        color: #742B85;
+    }
+
+    .vi_sub04_1 .list_txt .color li:nth-child(1) {
+        background: #742B85;
+    }
+
+    .vi_sub04_1 .list_txt .color li:nth-child(2) {
+        background: #0B1252;
+    }
+
+    .vi_sub04_1 .list_txt .color li:nth-child(3) {
+        background: #EC008C;
+    }
+
+    .vi_sub04_1 .list_txt .color li:nth-child(4) {
+        background: #FFF200;
+    }
+
+    .vi_sub04_2 {
+        background: url(../images/책\ 컬러리스트_목업2.jpg)no-repeat center center/cover;
+    }
+
+
+
+
+
+    .vi_sub05_1 {
+        background: url(../images/생활맥주_목업1.jpg) no-repeat center center/cover;
+    }
+
+    .vi_sub05_1 strong {
+        color: #F5C700;
+    }
+
+    .vi_sub05_1 .list_txt .color li:nth-child(1) {
+        background: #F5C700;
+    }
+
+    .vi_sub05_1 .list_txt .color li:nth-child(2) {
+        background: #1D1D1B;
+    }
+
+    .vi_sub05_1 .origin_img img {
+        height: 120px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+    }
+
+    .vi_sub05_2 {
+        background: url(../images/생활맥주_목업2.jpg)no-repeat center center/cover;
+    }
+}
+
 /* 🤩비주얼디자인 끝🤩 */
 
+
+
+
+
+/* .fp-controlArrow {
+    display: none;
+}
+
+.visual_arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1800px;
+
+    font-size: 60px;
+    color: #666666;
+
+    cursor: pointer;
+    z-index: 999;
+} */
+
+.fp-controlArrow.fp-prev {
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+
+.fp-controlArrow.fp-prev::before {
+    content: "\e93d";
+    font-family: xeicon;
+    font-size: 60px;
+}
+
+.fp-controlArrow.fp-next {
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+
+.fp-controlArrow.fp-next::before {
+    content: "\e940";
+    font-family: xeicon;
+    font-size: 60px;
+}
 
 
 

@@ -89,11 +89,17 @@ $(function () {
         }
     })
 
-    // < 반응형때 메뉴 클릭 시 서브메뉴 나오게 >
-    //     $('.header_gnb>ul>li>a').on('click', function (e) {
-    //         e.preventDefault();
-    //         $(this).next().slideToggle();
-    //         $(this).parent().siblings().find('.sub').slideUp();
-    //     })
+
+
+
+
+
+
+    // $('.section .visual_arrow .left').on('click', function () {
+    //     fullpage_api.moveSlideLeft();
+    // })
+    // $('.section .visual_arrow .right').on('click', function () {
+    //     fullpage_api.moveSlideRight();
+    // })
 
 })
