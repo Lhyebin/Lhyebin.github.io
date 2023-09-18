@@ -1178,7 +1178,7 @@
 }
 
 .vi_sub04_2 {
-    background: url(../images/책\ 컬러리스트_목업2.jpg)no-repeat center center/cover;
+    background: url(../images/책\ 컬러리스트_목업2.png)no-repeat center center/cover;
 }
 
 
@@ -1264,10 +1264,8 @@
     }
 
     /* 비주얼디자인 화살표 수정 */
-    .fp-controlArrow {}
 
     .fp-controlArrow.fp-prev {
-
         transform: translate(10px, -25px);
         left: auto;
         right: 15px;
@@ -1303,11 +1301,7 @@
     }
 
     .vi_sub01_2 {
-        background: url(../images/SNS중독\ 포스터_목업1.jpg)no-repeat 79% center/cover;
-    }
-
-    .vi_sub01_3 {
-        background: url(../images/SNS중독\ 포스터_목업2.jpg)no-repeat center center/cover;
+        background: url(../images/SNS중독\ 포스터_목업1.jpg)no-repeat 77% center/cover;
     }
 
 
@@ -1318,11 +1312,7 @@
     }
 
     .vi_sub02_2 {
-        background: url(../images/아디다스\ 신발\ 포스터_목업1.jpg)no-repeat 75% center/cover;
-    }
-
-    .vi_sub02_3 {
-        background: url(../images/아디다스\ 신발\ 포스터_목업2.jpg)no-repeat center center/cover;
+        background: url(../images/아디다스\ 신발\ 포스터_목업1.jpg)no-repeat 78% 20%/cover;
     }
 
 
@@ -1333,11 +1323,7 @@
     }
 
     .vi_sub03_2 {
-        background: url(../images/해운대모래축제_목업1.jpg)no-repeat 77% center/cover;
-    }
-
-    .vi_sub03_3 {
-        background: url(../images/해운대모래축제_목업2.jpg)no-repeat 25% center/cover;
+        background: url(../images/해운대모래축제_목업1.jpg)no-repeat 76% center/cover;
     }
 
 
@@ -1348,11 +1334,7 @@
     }
 
     .vi_sub04_2 {
-        background: url(../images/책\ 컬러리스트_목업1.png)no-repeat 70% center/cover;
-    }
-
-    .vi_sub04_3 {
-        background: url(../images/책\ 컬러리스트_목업2.jpg)no-repeat center center/cover;
+        background: url(../images/책\ 컬러리스트_목업1_2.jpg)no-repeat 74% center/cover;
     }
 
 
@@ -1370,11 +1352,7 @@
     }
 
     .vi_sub05_2 {
-        background: url(../images/생활맥주_목업1.jpg)no-repeat 87% center/cover;
-    }
-
-    .vi_sub05_3 {
-        background: url(../images/생활맥주_목업2.jpg)no-repeat center center/cover;
+        background: url(../images/생활맥주_목업1.jpg)no-repeat 85% center/cover;
     }
 }
 
